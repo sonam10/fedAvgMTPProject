@@ -1,0 +1,175 @@
+[I 2024-10-01 10:31:15.567 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-10-01 10:31:15.573 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-10-01 10:31:15.579 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-10-01 10:31:15.585 ServerApp] notebook | extension was successfully linked.
+[I 2024-10-01 10:31:15.880 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-10-01 10:31:15.987 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-10-01 10:31:15.992 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-10-01 10:31:15.994 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-10-01 10:31:15.996 LabApp] JupyterLab extension loaded from /home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/jupyterlab
+[I 2024-10-01 10:31:15.996 LabApp] JupyterLab application directory is /home2/sonam_2311cs18/anaconda3/envs/fed_avg/share/jupyter/lab
+[I 2024-10-01 10:31:15.997 LabApp] Extension Manager is 'pypi'.
+[I 2024-10-01 10:31:16.018 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-10-01 10:31:16.023 ServerApp] notebook | extension was successfully loaded.
+[I 2024-10-01 10:31:16.024 ServerApp] Serving notebooks from local directory: /home2/sonam_2311cs18/projectMTP/fedAvgProject
+[I 2024-10-01 10:31:16.024 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2024-10-01 10:31:16.024 ServerApp] http://localhost:8095/tree?token=37ba7a704cc3167974448db03e2666ded3b0e6e7757c2db2
+[I 2024-10-01 10:31:16.024 ServerApp]     http://127.0.0.1:8095/tree?token=37ba7a704cc3167974448db03e2666ded3b0e6e7757c2db2
+[I 2024-10-01 10:31:16.024 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-10-01 10:31:16.027 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home2/sonam_2311cs18/.local/share/jupyter/runtime/jpserver-37179-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8095/tree?token=37ba7a704cc3167974448db03e2666ded3b0e6e7757c2db2
+        http://127.0.0.1:8095/tree?token=37ba7a704cc3167974448db03e2666ded3b0e6e7757c2db2
+[I 2024-10-01 10:31:16.052 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2024-10-01 10:31:33.279 ServerApp] 404 GET /api/kernels/dc10595b-b6f7-4d1d-9200-7c121d2f5b9f?1727758893212 (::1): Kernel does not exist: dc10595b-b6f7-4d1d-9200-7c121d2f5b9f
+[W 2024-10-01 10:31:33.279 ServerApp] wrote error: 'Kernel does not exist: dc10595b-b6f7-4d1d-9200-7c121d2f5b9f'
+    Traceback (most recent call last):
+      File "/home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: dc10595b-b6f7-4d1d-9200-7c121d2f5b9f)
+[W 2024-10-01 10:31:33.282 ServerApp] 404 GET /api/kernels/dc10595b-b6f7-4d1d-9200-7c121d2f5b9f?1727758893212 (c01132a1bc0744e880f0942202782674@::1) 5.18ms referer=http://localhost:8095/notebooks/Untitled.ipynb
+[W 2024-10-01 10:31:34.273 ServerApp] 404 GET /api/kernels/dc10595b-b6f7-4d1d-9200-7c121d2f5b9f/channels?session_id=64a6902a-ae5b-4110-85f4-9fc2504ac145 (::1): Kernel does not exist: dc10595b-b6f7-4d1d-9200-7c121d2f5b9f
+[W 2024-10-01 10:31:34.298 ServerApp] 404 GET /api/kernels/dc10595b-b6f7-4d1d-9200-7c121d2f5b9f/channels?session_id=64a6902a-ae5b-4110-85f4-9fc2504ac145 (c01132a1bc0744e880f0942202782674@::1) 25.30ms referer=None
+[W 2024-10-01 10:31:34.312 ServerApp] 404 GET /api/kernels/dc10595b-b6f7-4d1d-9200-7c121d2f5b9f?1727758894255 (::1): Kernel does not exist: dc10595b-b6f7-4d1d-9200-7c121d2f5b9f
+[W 2024-10-01 10:31:34.312 ServerApp] wrote error: 'Kernel does not exist: dc10595b-b6f7-4d1d-9200-7c121d2f5b9f'
+    Traceback (most recent call last):
+      File "/home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: dc10595b-b6f7-4d1d-9200-7c121d2f5b9f)
+[W 2024-10-01 10:31:34.313 ServerApp] 404 GET /api/kernels/dc10595b-b6f7-4d1d-9200-7c121d2f5b9f?1727758894255 (c01132a1bc0744e880f0942202782674@::1) 1.57ms referer=http://localhost:8095/notebooks/Untitled.ipynb
+[W 2024-10-01 10:31:37.055 ServerApp] 404 GET /api/kernels/dc10595b-b6f7-4d1d-9200-7c121d2f5b9f/channels?session_id=64a6902a-ae5b-4110-85f4-9fc2504ac145 (::1): Kernel does not exist: dc10595b-b6f7-4d1d-9200-7c121d2f5b9f
+[W 2024-10-01 10:31:37.056 ServerApp] 404 GET /api/kernels/dc10595b-b6f7-4d1d-9200-7c121d2f5b9f/channels?session_id=64a6902a-ae5b-4110-85f4-9fc2504ac145 (c01132a1bc0744e880f0942202782674@::1) 1.70ms referer=None
+[I 2024-10-01 10:31:40.995 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:31:43.880 ServerApp] Kernel started: cadf05ac-35da-4228-b75b-19fbb465f0da
+[I 2024-10-01 10:31:44.465 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-01 10:31:44.468 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-01 10:31:44.490 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-01 10:33:45.128 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:35:47.623 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:37:49.619 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:39:51.616 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:41:53.610 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:43:08.769 ServerApp] Starting buffering for cadf05ac-35da-4228-b75b-19fbb465f0da:9af9f0df-c140-4bb1-802e-4f634dd17d79
+[I 2024-10-01 10:43:08.825 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-01 10:43:08.825 ServerApp] Restoring connection for cadf05ac-35da-4228-b75b-19fbb465f0da:9af9f0df-c140-4bb1-802e-4f634dd17d79
+[I 2024-10-01 10:44:54.587 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:46:56.453 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:48:58.477 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:51:01.549 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:53:03.540 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:55:05.480 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:57:07.441 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 10:59:09.481 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:01:11.550 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:03:13.792 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:05:15.639 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:07:17.558 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:09:19.458 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:11:21.443 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:13:23.437 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:15:09.047 ServerApp] Starting buffering for cadf05ac-35da-4228-b75b-19fbb465f0da:9af9f0df-c140-4bb1-802e-4f634dd17d79
+[I 2024-10-01 11:15:09.230 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-01 11:15:09.230 ServerApp] Restoring connection for cadf05ac-35da-4228-b75b-19fbb465f0da:9af9f0df-c140-4bb1-802e-4f634dd17d79
+[I 2024-10-01 11:15:25.473 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:17:27.490 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:19:29.452 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:21:31.458 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:23:33.512 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:25:35.475 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:27:37.483 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:29:39.698 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:31:42.087 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:33:44.468 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:35:46.550 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:37:48.560 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:39:51.078 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:41:53.487 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:43:55.439 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:45:57.449 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:47:59.475 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:50:01.428 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:52:03.441 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:54:05.478 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:56:07.564 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 11:58:09.493 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:00:11.422 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:02:13.459 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:04:15.447 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:06:17.457 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:08:19.427 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:10:21.457 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:12:23.532 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:14:25.472 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:16:27.444 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:18:29.630 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:20:31.649 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:22:34.553 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:24:36.738 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:26:41.782 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:28:46.302 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:30:48.594 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:32:52.320 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-10-01 12:57:01.596 ServerApp] Starting buffering for cadf05ac-35da-4228-b75b-19fbb465f0da:9af9f0df-c140-4bb1-802e-4f634dd17d79
+[I 2024-10-01 12:57:02.136 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-01 12:57:02.136 ServerApp] Restoring connection for cadf05ac-35da-4228-b75b-19fbb465f0da:9af9f0df-c140-4bb1-802e-4f634dd17d79
+[I 2024-10-01 14:56:42.301 ServerApp] Starting buffering for cadf05ac-35da-4228-b75b-19fbb465f0da:9af9f0df-c140-4bb1-802e-4f634dd17d79
+[I 2024-10-01 14:56:43.047 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-01 14:56:43.047 ServerApp] Restoring connection for cadf05ac-35da-4228-b75b-19fbb465f0da:9af9f0df-c140-4bb1-802e-4f634dd17d79
+[W 2024-10-01 14:58:13.048 ServerApp] WebSocket ping timeout after 90001 ms.
+[I 2024-10-01 14:58:18.051 ServerApp] Starting buffering for cadf05ac-35da-4228-b75b-19fbb465f0da:9af9f0df-c140-4bb1-802e-4f634dd17d79
+[I 2024-10-02 17:23:43.765 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-10-02 17:23:43.771 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-10-02 17:23:43.778 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-10-02 17:23:43.784 ServerApp] notebook | extension was successfully linked.
+[I 2024-10-02 17:23:44.268 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-10-02 17:23:44.317 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-10-02 17:23:44.323 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-10-02 17:23:44.326 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-10-02 17:23:44.329 LabApp] JupyterLab extension loaded from /home2/sonam_2311cs18/anaconda3/envs/fed_avg/lib/python3.9/site-packages/jupyterlab
+[I 2024-10-02 17:23:44.329 LabApp] JupyterLab application directory is /home2/sonam_2311cs18/anaconda3/envs/fed_avg/share/jupyter/lab
+[I 2024-10-02 17:23:44.330 LabApp] Extension Manager is 'pypi'.
+[I 2024-10-02 17:23:44.361 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-10-02 17:23:44.368 ServerApp] notebook | extension was successfully loaded.
+[I 2024-10-02 17:23:44.369 ServerApp] The port 8095 is already in use, trying another port.
+[I 2024-10-02 17:23:44.369 ServerApp] Serving notebooks from local directory: /home2/sonam_2311cs18/projectMTP/fedAvgProject
+[I 2024-10-02 17:23:44.370 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2024-10-02 17:23:44.370 ServerApp] http://localhost:8096/tree?token=8a3fd0b29a1b9b0c4ef9166cd2dec78de65669858de1c58b
+[I 2024-10-02 17:23:44.370 ServerApp]     http://127.0.0.1:8096/tree?token=8a3fd0b29a1b9b0c4ef9166cd2dec78de65669858de1c58b
+[I 2024-10-02 17:23:44.370 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-10-02 17:23:44.374 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home2/sonam_2311cs18/.local/share/jupyter/runtime/jpserver-6755-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8096/tree?token=8a3fd0b29a1b9b0c4ef9166cd2dec78de65669858de1c58b
+        http://127.0.0.1:8096/tree?token=8a3fd0b29a1b9b0c4ef9166cd2dec78de65669858de1c58b
+[I 2024-10-02 17:23:44.397 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2024-10-02 17:24:05.159 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-02 17:24:05.758 ServerApp] Starting buffering for cadf05ac-35da-4228-b75b-19fbb465f0da:fbcd9706-514a-4910-a608-92869775d5ea
+[I 2024-10-02 17:24:07.566 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-02 17:30:00.026 ServerApp] Starting buffering for cadf05ac-35da-4228-b75b-19fbb465f0da:5930bb74-2b1f-4af6-8fc6-15217aee208a
+[I 2024-10-02 17:30:00.293 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-02 17:30:00.294 ServerApp] Restoring connection for cadf05ac-35da-4228-b75b-19fbb465f0da:5930bb74-2b1f-4af6-8fc6-15217aee208a
+[W 2024-10-02 17:31:30.295 ServerApp] WebSocket ping timeout after 90001 ms.
+[I 2024-10-02 17:31:35.297 ServerApp] Starting buffering for cadf05ac-35da-4228-b75b-19fbb465f0da:5930bb74-2b1f-4af6-8fc6-15217aee208a
+[I 2024-10-02 18:12:46.595 ServerApp] Connecting to kernel cadf05ac-35da-4228-b75b-19fbb465f0da.
+[I 2024-10-02 18:12:46.596 ServerApp] Restoring connection for cadf05ac-35da-4228-b75b-19fbb465f0da:5930bb74-2b1f-4af6-8fc6-15217aee208a
